@@ -47,7 +47,6 @@ h2 {
   text-align: center;
 
   margin-bottom: 3rem;
-  padding: 70px 0;
 }
 /* NOTE HEADER */
 
@@ -192,7 +191,7 @@ header {
   background-color: #836eaa;
 }
 
-/* INTRO NUMBER */
+/* NOTE NUMBER */
 .number {
   padding: 70px 0;
 }
@@ -226,7 +225,10 @@ fix responsive button drop xuống vì h3 đẩy
 .services {
   background-image: url(../img/s1.jpg);
   background-size: cover;
+
   text-align: center;
+
+  padding: 70px 0;
 }
 
 .services h2 {
@@ -278,4 +280,31 @@ fix responsive button drop xuống vì h3 đẩy
 
 .services__item:hover i {
   color: #ff0e83;
+}
+
+/* NOTE GALLERY */
+.gallery {
+  padding: 70px 0;
+}
+
+.gallery__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.gallery__g1 {
+  grid-column: 1 / span 2;
+}
+
+.gallery__g6 {
+  grid-column: 3 / span 2;
+}
+
+/* height 100% dãn nhẹ hình */
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
