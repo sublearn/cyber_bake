@@ -38,6 +38,17 @@ button:hover {
   color: black;
   border-color: #ff0e83;
 }
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  text-align: center;
+
+  margin-bottom: 3rem;
+  padding: 70px 0;
+}
 /* NOTE HEADER */
 
 header {
@@ -190,17 +201,81 @@ header {
   justify-content: space-around;
   width: 70%;
   margin: 0 auto;
+
   text-align: center;
 }
 
-.number__item p:first-of-type{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #4e2a84;
+.number__item p:first-of-type {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4e2a84;
 }
 
-.number__item p:last-of-type{
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 4px;
+.number__item p:last-of-type {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* NOTE SERVICES */
+/* TODO 
+fix center icon responsive
+fix responsive button drop xuống vì h3 đẩy
+*/
+
+.services {
+  background-image: url(../img/s1.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.services h2 {
+  color: white;
+}
+
+.service__content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.services__item {
+  padding: 0 20px;
+}
+
+/* line height canh giữa khi chỉ có 1 hàng chữ duy nhất */
+.services__item i {
+  width: 105px;
+  height: 105px;
+  border: 1px solid #4e2a84;
+  border-radius: 50%;
+
+  background-color: white;
+  color: #4e2a84;
+
+  font-size: 3.75rem;
+  line-height: 105px;
+
+  transition: all 0.3s;
+}
+
+.services__item h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 17px 0;
+}
+
+.services__item p {
+  font-size: 0.875rem;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.services__item button {
+  padding: 12px 27px;
+  border-width: 2px;
+}
+
+.services__item:hover i {
+  color: #ff0e83;
 }
