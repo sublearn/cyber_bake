@@ -111,7 +111,7 @@ header {
 }
 
 /* NOTE INTRO */
-
+/* TODO fix responsive img bằng div chữ */
 .intro {
   display: grid;
   /* grid-template-columns: 25% 25% 25% 25%; */
@@ -132,17 +132,50 @@ header {
   grid-column: 3 / span 2;
 }
 
-.intro__item img{
-    width: 100%;
-    /* xử lí phần hở do inline img */
-    display: block;
+.intro__item img {
+  width: 100%;
+  /* xử lí phần hở do inline img */
+  display: block;
 }
 
 /* div con chiếm 100% flexbox nên ko cần justify-content: center */
 /* ở đây sẽ xử lý bằng padding div cha để ép vô */
 .intro__item {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
+
+.intro__item div {
+  padding: 0 32px;
+}
+
+.intro__item h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro__item p {
+  color: #c1c1c1;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+.intro .intro__item:first-child, .intro .intro__item:nth-child(8) {
+  background-color: #4e2a84;
+}
+
+.intro .intro__item:nth-child(3) {
+  background-color: #ff0e83;
+}
+
+.intro .intro__item:nth-child(4) {
+  background-color: #ed6498;
+}
+
+.intro .intro__item:nth-child(6) {
+  background-color: #836eaa;
+}
+
