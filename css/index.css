@@ -112,6 +112,7 @@ header {
 
 /* NOTE INTRO */
 /* TODO fix responsive img bằng div chữ */
+/* TODO fix grid dàn 2 hình cao ngang nhau */
 .intro {
   display: grid;
   /* grid-template-columns: 25% 25% 25% 25%; */
@@ -163,7 +164,8 @@ header {
   line-height: 20px;
 }
 
-.intro .intro__item:first-child, .intro .intro__item:nth-child(8) {
+.intro .intro__item:first-child,
+.intro .intro__item:nth-child(8) {
   background-color: #4e2a84;
 }
 
@@ -179,3 +181,26 @@ header {
   background-color: #836eaa;
 }
 
+/* INTRO NUMBER */
+.number {
+  padding: 70px 0;
+}
+.number__content {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.number__item p:first-of-type{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4e2a84;
+}
+
+.number__item p:last-of-type{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
