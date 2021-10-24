@@ -16,6 +16,28 @@ body {
   letter-spacing: 1px;
 }
 
+/* NOTE Repeat ele - component */
+button {
+  background-color: #ff0e83;
+
+  color: white;
+  text-align: center;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 13px 32px;
+
+  cursor: pointer;
+  transition: all .2s;
+} 
+
+button:hover{
+background-color: white;
+color: black;
+border-color: #ff0e83;
+}
 /* NOTE HEADER */
 
 header {
@@ -42,8 +64,8 @@ header {
 
 .header__content ul a {
   text-decoration: none;
-  color: white;
 
+  color: white;
   font-size: 0.75rem;
   letter-spacing: 2px;
   font-weight: 700;
@@ -61,4 +83,29 @@ header {
 
 .header__content ul .active a {
   color: #ff0e83;
+}
+/* NOTE CAROUSEL */
+/* Vì carousel chỉ có 1 thẻ con nên có thể tận dụng flexbox để canh center div con duy nhất*/
+
+.carousel {
+  background-image: url(../img/b3.jpg);
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel h1 {
+  font-size: 3.5rem;
+}
+
+.carousel p {
+  font-size: 1.1rem;
+  margin: 23px;
 }
