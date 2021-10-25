@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAKE</title>
 
+    <!-- cdn Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 
+    <!-- cdn google font for html and body tag -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <!-- Lightbox for Gallery -->
+    <link rel="stylesheet" href="./css/lightbox.css">
+
+    <!-- Main css -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -140,46 +146,58 @@
         <h2>OUR GALLERY</h2>
         <div class="gallery__content">
             <figure class="gallery__item gallery__g1">
-                <img src="./img/g1.jpg" alt="gallery 1">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                <a href="./img/g1.jpg" data-lightbox="gallery__show">
+                    <img src="./img/g1.jpg" alt="gallery 1">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g2.jpg" alt="gallery 2">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                <a href="./img/g2.jpg" data-lightbox="gallery__show">
+                    <img src="./img/g2.jpg" alt="gallery 2">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g3.jpg" alt="gallery 3">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                <a href="./img/g3.jpg" data-lightbox="gallery__show">
+                    <img src="./img/g3.jpg" alt="gallery 3">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g4.jpg" alt="gallery 4">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                <a href="./img/g4.jpg" data-lightbox="gallery__show">
+                    <img src="./img/g4.jpg" alt="gallery 4">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g5.jpg" alt="gallery 5">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                <a href="./img/g5.jpg" data-lightbox="gallery__show">
+                    <img src="./img/g5.jpg" alt="gallery 5">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item gallery__g6">
-                <img src="./img/g6.jpg" alt="gallery 6">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                <a href="./img/g6.jpg" data-lightbox="gallery__show">
+                    <img src="./img/g6.jpg" alt="gallery 6">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
         </div>
     </section>
@@ -196,17 +214,23 @@
 
     </footer>
 
+    <!-- cdn jQuery for CountUp and Lightbox -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- cdn jQuery Waypoints for CountUp -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- CountUp js -->
     <script src="./js/jquery.countup.js"></script>
     <script>
         $('.numScroll').countUp();
     </script>
+
+    <!-- LightBox js -->
+    <script src="./js/lightbox.min.js"></script>
 </body>
 
 </html>
