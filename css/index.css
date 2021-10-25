@@ -310,8 +310,10 @@ fix responsive button drop xuống vì h3 đẩy
 }
 
 /* NOTE OVERLAY */
+/* TODO responsive text theo width của item */
 .gallery__item {
   position: relative;
+  overflow: hidden;
 }
 
 .gallery__overlay {
@@ -335,10 +337,28 @@ fix responsive button drop xuống vì h3 đẩy
   right: 28px;
 
   font-size: 0.75rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.3s;
 }
+
+/* Gọi từ div lớn nhất cho an toàn */
+.gallery__item:hover .gallery__overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* có thể dùng padding - margin - position - transform */
 
 .gallery__overlay h3 {
   font-size: 1.875rem;
+  transform: translateY(20px);
+}
+
+.gallery__item:hover .gallery__overlay h3 {
+  transform: translateY(0);
+  transition: all 0.3s;
 }
 
 .gallery__overlay h3 span {
@@ -352,6 +372,15 @@ fix responsive button drop xuống vì h3 đẩy
   height: 5px;
   display: block;
   margin-top: 10px;
-  
+
+  transform: translateY(20px);
+  transition: all 0.3s;
+  opacity: 0;
+
   background-color: white;
+}
+
+.gallery__item:hover .gallery__overlay h3::after {
+  transform: translateY(0);
+  opacity: 1;
 }
