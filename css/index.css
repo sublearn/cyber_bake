@@ -384,3 +384,55 @@ fix responsive button drop xuống vì h3 đẩy
   transform: translateY(0);
   opacity: 1;
 }
+
+/* NOTE TEAM */
+/* TODO fix responsive */
+.team {
+  background-color: #4e2a84;
+  padding: 70px 0;
+}
+
+.team h2 {
+  color: white;
+}
+
+.team__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 30px;
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+.team__item img {
+  width: 100%;
+  display: block;
+}
+.team__item {
+  position: relative;
+}
+
+/* ko dùng height được vì bị lố ra */
+.team__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width:100%; */
+  /* vẫn ok */
+
+  padding: 30px;
+
+  background-color: #ff0e83;
+  color: white;
+}
+
+.team__title h3 {
+  font-size: 1.3rem;
+}
+
+.team__title p {
+  font-size: 0.875rem;
+  line-height: 28px;
+}
