@@ -426,8 +426,12 @@ fix responsive button drop xuống vì h3 đẩy
 
   background-color: #ff0e83;
   color: white;
+
+  opacity: 1;
+  transition: all 0.3s;
 }
 
+.team__detail h3,
 .team__title h3 {
   font-size: 1.3rem;
 }
@@ -435,4 +439,60 @@ fix responsive button drop xuống vì h3 đẩy
 .team__title p {
   font-size: 0.875rem;
   line-height: 28px;
+}
+
+.team__detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* width: 100%;
+  height: 100%; */
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 100px 40px;
+
+  transition: all .3s;
+  opacity: 0;
+}
+
+.team__detail h3{
+  color: #ff0e83;
+}
+
+.team__text{
+  margin: 8px 0;
+}
+
+.team__socials{
+  margin-top: 24px;
+}
+
+.team__socials i{
+  width: 37px;
+  height: 37px;
+
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  
+  line-height: 37px;
+  text-align: center;
+
+  transition: all 0.3s;
+}
+
+.team__socials i:hover{
+  color: #ff0e83;
+  border-color: #ff0e83;
+}
+
+.team__item:hover .team__detail{
+  opacity: 1;
+}
+
+.team__item:hover .team__title{
+  opacity: 0;
 }
