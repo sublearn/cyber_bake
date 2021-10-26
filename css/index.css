@@ -455,44 +455,95 @@ fix responsive button drop xuống vì h3 đẩy
   color: white;
   padding: 100px 40px;
 
-  transition: all .3s;
+  transition: all 0.3s;
   opacity: 0;
 }
 
-.team__detail h3{
+.team__detail h3 {
   color: #ff0e83;
 }
 
-.team__text{
+.team__text {
   margin: 8px 0;
 }
 
-.team__socials{
+.team__socials {
   margin-top: 24px;
 }
 
-.team__socials i{
+.team__socials i {
   width: 37px;
   height: 37px;
 
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   margin: 0 5px;
-  
+
   line-height: 37px;
   text-align: center;
 
   transition: all 0.3s;
 }
 
-.team__socials i:hover{
+.team__socials i:hover {
   color: #ff0e83;
   border-color: #ff0e83;
 }
 
-.team__item:hover .team__detail{
+.team__item:hover .team__detail {
   opacity: 1;
 }
 
-.team__item:hover .team__title{
+.team__item:hover .team__title {
   opacity: 0;
 }
+
+/* NOTE FEEDBACK */
+.feedback {
+  background-image: url(../img/cc1.jpg);
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.feedback h2 {
+  color: white;
+}
+
+.feedback__content {
+  width: 75%;
+
+  border: 3px solid #ff0e83;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.feedback__content i {
+  color: #2cbeff;
+  font-size: 1.3rem;
+  padding: 0 18px;
+}
+
+.feedback__content p {
+  line-height: 30px;
+  letter-spacing: 1.3px;
+}
+
+.feedback__name {
+  color: white;
+}
+
+/* Nên gọi kèm class cha bao ngoài để tránh đè toàn bộ thư viện owl Carousel */
+.feedback__content .owl-theme .owl-dots .owl-dot span {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot.active span {
+  background-color: black;
+}
+
+/* .feedback__content .owl-theme .owl-dots .owl-dot:focus{
+  outline: solid;
+} */

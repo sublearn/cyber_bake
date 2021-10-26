@@ -13,8 +13,13 @@
     <!-- cdn google font for html and body tag -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Lightbox for Gallery -->
+    <!-- Lightbox for img popup in Gallery Section -->
     <link rel="stylesheet" href="./css/lightbox.css">
+
+    <!-- Owl Carousel Css-install for Feedback Section -->
+    <!-- order of  css followed the docs-->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="./css/index.css">
@@ -309,7 +314,29 @@
         </div>
     </section>
     <section class="feedback">
-
+        <h2>TESTIMONIALS</h2>
+        <div class="feedback__content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                        aut officiis nostrum, qui reiciendis cumque commodi fuga? Architecto, iste nulla. <i
+                            class="fa fa-quote-right"></i></p>
+                    <p class="feedback__name">MARK</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                        aut officiis nostrum, qui reiciendis cumque commodi fuga? Architecto, iste nulla. <i
+                            class="fa fa-quote-right"></i></p>
+                    <p class="feedback__name">ALLY</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                        aut officiis nostrum, qui reiciendis cumque commodi fuga? Architecto, iste nulla. <i
+                            class="fa fa-quote-right"></i></p>
+                    <p class="feedback__name">WILLSON</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="contact">
 
@@ -318,7 +345,7 @@
 
     </footer>
 
-    <!-- cdn jQuery for CountUp and Lightbox -->
+    <!-- cdn jQuery for CountUp, Lightbox and Owl Carousel-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -327,14 +354,36 @@
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- CountUp js -->
+    <!-- CountUp js for Number Section-->
     <script src="./js/jquery.countup.js"></script>
     <script>
         $('.numScroll').countUp();
     </script>
 
-    <!-- LightBox js -->
+    <!-- LightBox js for img popup in Gallery Section-->
     <script src="./js/lightbox.min.js"></script>
+
+    <!-- Owl Carousel for Feedback Section -->
+    <!-- https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            // loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                // 600: {
+                //     items: 1
+                // },
+                // 1000: {
+                //     items: 1
+                // }
+            }
+        })
+    </script>
 </body>
 
 </html>
