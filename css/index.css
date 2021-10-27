@@ -120,6 +120,29 @@ header {
   margin: 23px;
 }
 
+/* NOTE animation for carousel button */
+/* 
+  timing function option như transform
+*/
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* animation: upDown 0.5s linear 0s infinite; */
+/* .carousel button:hover {
+  animation: upDown2 0.5s linear 0s infinite;
+} */
+
+/* BUG iteration-count: initial ko chạy, check */
+
+/* 
+iteration-count: initial = 1 lần chuyển động 
+direction: reverse - đi ngược, alternate - lần chẵn sẽ đi reverse 
+fill-mode: forwards, đi xong hết animation sẽ giữ màu đó nếu ko bị reset
+fill-mode: backwards - gg, đi xong reset ?
+*/
+
+.carousel__content:hover button {
+  animation: upDown3 2s 1s 1 backwards;
+}
+
 /* NOTE INTRO */
 /* TODO fix responsive img bằng div chữ */
 /* TODO fix grid dàn 2 hình cao ngang nhau */
@@ -434,7 +457,7 @@ translate Y ko đủ và sẽ có chữ bị hiện */
 
 /* transform skew làm hình bị méo, phải thiết kế lại layout
  */
- 
+
 /* NOTE TEAM */
 /* TODO fix responsive */
 .team {
@@ -782,4 +805,38 @@ footer {
 
 .footer__copyright span {
   color: #ff0e83;
+}
+
+/* Khai báo chuỗi chuyển động */
+@keyframes upDown {
+  0% {
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Cách khai báo 2: from to */
+/* ko set animation quay về nên sẽ giựt */
+@keyframes upDown2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes upDown3 {
+  0% {
+    transform: translateY(0);
+    background-color: red;
+  }
+  100% {
+    transform: translateY(50px);
+    background-color: yellow;
+  }
 }
