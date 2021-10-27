@@ -610,24 +610,92 @@ fix responsive button drop xuống vì h3 đẩy
   border-color: black;
 }
 
-.contact__map iframe{
+.contact__map iframe {
   width: 100%;
   margin-top: 50px;
 }
 
-.contact__info{
+.contact__info {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-top: 50px;
 }
 
-.contact__info i{
+.contact__info i {
   font-size: 2rem;
   color: #4e2a84;
 }
 
-.contact__info p{
+.contact__info p {
   font-size: 0.8rem;
   margin: 10px 0;
+}
+
+/* NOTE COPYRIGHT */
+.footer__copyright {
+  text-align: center;
+}
+
+/* NOTE FOOTER */
+footer {
+  padding: 50px 0;
+
+  background-color: black;
+  color: white;
+}
+
+.footer__main {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer__item {
+  width: 25%;
+  padding: 0 20px;
+}
+
+.footer__item h3 {
+  color: #ff0e83;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer__item p {
+  font-size: 0.8rem;
+  line-height: 28px;
+  margin-bottom: 1rem;
+}
+
+/* có thể dùng class team social hoặc set css chung lên global */
+.footer__socials i {
+  width: 35px;
+  height: 35px;
+
+  line-height: 35px;
+  text-align: center;
+
+  margin-right: 10px;
+
+  border: 1px solid white;
+
+  transition: all 0.3s;
+}
+
+.footer__socials i:hover {
+  color: #ff0e83;
+  border-color: #ff0e83;
+}
+
+/* Working time */
+.footer__time{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px white dotted;
+}
+
+.footer__time p{
+  margin: 10px 0;
+  padding: 0;
 }
