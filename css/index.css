@@ -385,6 +385,56 @@ fix responsive button drop xuống vì h3 đẩy
   opacity: 1;
 }
 
+/* NOTE overlay css3 transform */
+
+.team__overlay--translateX {
+  overflow: hidden;
+}
+
+.team__overlay--translateX .team__detail {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+
+.team__overlay--translateX:hover .team__detail {
+  transform: translateX(0);
+}
+/* BUG thu nhỏ thì chữ lấn vô, 
+translate Y ko đủ và sẽ có chữ bị hiện */
+.team__overlay--translateY {
+  overflow: hidden;
+}
+
+.team__overlay--translateY .team__detail {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.team__overlay--translateY:hover .team__detail {
+  transform: translateY(0);
+}
+
+/* .team__overlay--rotate .team__detail {
+  opacity: 0;
+  transform: rotate(0);
+} */
+
+.team__overlay--rotate:hover .team__detail {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.team__overlay--zoomout .team__detail {
+  transform: scale(0);
+}
+
+.team__overlay--zoomout:hover .team__detail {
+  transform: scale(1);
+}
+
+/* transform skew làm hình bị méo, phải thiết kế lại layout
+ */
+ 
 /* NOTE TEAM */
 /* TODO fix responsive */
 .team {
@@ -718,10 +768,9 @@ footer {
   border-color: #ff0e83;
 }
 
-.footer__item .footer__sub button:hover{
+.footer__item .footer__sub button:hover {
   border-color: black;
 }
-
 
 /* NOTE COPYRIGHT */
 .footer__copyright {
@@ -731,6 +780,6 @@ footer {
   font-size: 0.8rem;
 }
 
-.footer__copyright span{
+.footer__copyright span {
   color: #ff0e83;
 }
