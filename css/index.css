@@ -632,11 +632,6 @@ fix responsive button drop xuống vì h3 đẩy
   margin: 10px 0;
 }
 
-/* NOTE COPYRIGHT */
-.footer__copyright {
-  text-align: center;
-}
-
 /* NOTE FOOTER */
 footer {
   padding: 50px 0;
@@ -689,13 +684,53 @@ footer {
 }
 
 /* Working time */
-.footer__time{
+/* TODO responsive working time, responsive font chữ */
+.footer__time {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px white dotted;
 }
 
-.footer__time p{
+.footer__time p {
   margin: 10px 0;
   padding: 0;
+}
+
+.footer__item .footer__sub input {
+  margin-bottom: 1rem;
+  padding: 10px;
+
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.footer__item .footer__sub input:focus {
+  outline: none;
+}
+
+.footer__item .footer__sub button {
+  padding: 7px 16px;
+  margin-bottom: 24px;
+
+  font-weight: 700;
+
+  color: black;
+  border-color: #ff0e83;
+}
+
+.footer__item .footer__sub button:hover{
+  border-color: black;
+}
+
+
+/* NOTE COPYRIGHT */
+.footer__copyright {
+  margin-top: 50px;
+
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer__copyright span{
+  color: #ff0e83;
 }
