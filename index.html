@@ -508,6 +508,18 @@
     <script src="./js/backToTop_util.js"></script>
     <script src="./js/backToTop_main.js"></script>
 
+    <!-- Navigationbar JS -->
+    <script>
+        var mainNav = document.querySelector(".header__content ul")
+        var listNav = mainNav.getElementsByTagName("li")
+        for (li of listNav) {
+            li.addEventListener("click", function () {
+                let current = document.querySelector(".header__content ul .active")
+                current.className = current.className.replace("active", "")
+                this.className += " active";
+            })
+        }
+    </script>
 </body>
 
 </html>
