@@ -840,3 +840,41 @@ footer {
     background-color: yellow;
   }
 }
+
+/* NOTE Back to top */
+.backToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.backToTop i {
+  width: 40px;
+  height: 40px;
+
+  color: #0bbbcc;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 36px;
+
+  border: 2px solid #0bbbcc;
+  border-radius: 50%;
+}
+
+/* 
+back to top docs
+https://codyhouse.co/gem/back-to-top 
+*/
+.cd-top--is-visible {
+  /* // back-to-top button visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  /* // reduce button opacity if user keeps scrolling */
+  opacity: 0.5;
+}

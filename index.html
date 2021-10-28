@@ -443,6 +443,15 @@
         </div>
     </footer>
 
+    <!-- Back to top icon 
+    di chuyển theo view web mà ko thuộc 1 thành phần cụ thể nào
+    Những phần vậy thường đặt ở cuối web
+    -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- NOTE SCRIPT section -->
     <!-- cdn jQuery for CountUp, Lightbox and Owl Carousel-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -482,6 +491,23 @@
             }
         })
     </script>
+
+    <!-- NOTE thư viện back to top 
+        Thư viện tham khảo tạm trong proj này
+    CODE source 
+    https://codyhouse.co/ds/components/app/back-to-top
+    DOC news (ko import js như doc cũ)
+    https://codyhouse.co/gem/back-to-top
+
+    Thư viện hiện có nhiều module tính phí, có bản quyền
+    File lưu lại là file share, trang chủ ko download được
+    Có thể viết thuần js hoặc copy code trên link
+
+    -->
+
+    <script src="./js/backToTop_util.js"></script>
+    <script src="./js/backToTop_main.js"></script>
+
 </body>
 
 </html>
